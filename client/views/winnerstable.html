@@ -1,0 +1,29 @@
+<template name="winnerstable">
+  <div style="background:hsl(0,2%,25%);padding:1em 2em 1em 2em;border:1px solid black;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);margin-bottom:1.5em;">
+    <h1 style="height:45px;line-height:45px;margin:0em auto 1em auto;text-shadow:1px 1px 2px black;color:white;width:50%;text-align:center;font-weight:bold;font-size:1.5em;background:rgb(241,155,126);border:1px solid black;padding:0em;box-shadow:2px 2px 4px rgba(0,0,0,0.5)">1612ICT MINESWEEPER<div style="position:relative;right:-150px;top:-58px"><img width="75px" src="logo.png"></div></h1>
+    <h2 style="font-weight:bold;font-size:1.5em;text-align:center;text-shadow: 1px 1px 2px black;color:white;">LEADER BOARD</h2>
+    <table class="table table-striped table-bordered" style="text-align:center;background:white">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Dimensions</th>
+          <th>Bombs</th>
+          <th>Preset</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each winners}}
+        <tr style="background:{{rowhighlight}}">
+          <td>{{namedb}}</td>
+          <td>{{dimensions}}</td>
+          <td>{{bombsdb}}</td>
+          <td>{{preset}}</td>
+          <td>{{sweeptimehr}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <button id="backtable" style="width:50%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn orangebg buttonclass">BACK</button>
+  </div>
+</template>

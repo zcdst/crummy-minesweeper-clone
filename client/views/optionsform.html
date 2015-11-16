@@ -1,0 +1,42 @@
+<template name="optionsform">
+  <div style="background:hsl(0,2%,25%);padding:1em 2em 1em 2em;border:1px solid black;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);margin-bottom:1.5em;">
+    <h1 style="height:45px;line-height:45px;margin:0em auto 1em auto;text-shadow:1px 1px 2px black;color:white;width:50%;text-align:center;font-weight:bold;font-size:1.5em;background:rgb(241,155,126);border:1px solid black;padding:0em;box-shadow:2px 2px 4px rgba(0,0,0,0.5)">1612ICT MINESWEEPER<div style="position:relative;right:-150px;top:-58px"><img width="75px" src="logo.png"></div></h1>
+    <form>
+      <label>NEW GAME</label>
+      <br />
+      <button id="easy" style="width:100%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn greenbgdark buttonclass">EASY</button>
+      <br />
+      <button id="medium" style="width:100%;color:white;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn bluebg buttonclass">MEDIUM</button>
+      <br />
+      <button id="difficult" style="width:100%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn orangebg buttonclass">DIFFICULT</button>
+      <br />
+      <button data-toggle="collapse" href="#presets" style="width:100%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn redbg buttonclass">CUSTOM</button>
+      <div id="presets" data-toggle="false" class="accordion-body collapse">
+        <div style="padding-top:20px;padding-bottom:20px;">
+          <div class="form-group">
+            <label for="inputcolumns">COLUMNS</label>
+            <input style="border-radius:0;border: 2px solid black" class="form-control" name="inputcolumns" id="inputcolumns" placeholder="Between 5 and 12">
+          </div>
+          <div class="form-group">
+            <label for="inputrows">ROWS</label>
+            <input style="border-radius:0;border: 2px solid black" class="form-control" name="inputrows" id="inputrows" placeholder="Between 5 and 12">
+          </div>
+          <div class="form-group">
+            <label for="inputbombs">NUMBER OF BOMBS</label>
+            <input style="border-radius:0;border: 2px solid black" class="form-control" name="inputbombs" id="inputbombs" placeholder="Minimum 3">
+          </div>
+          <button id="newgame" style="width:100%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn bluebgdark buttonclass">BEGIN CUSTOM GAME</button>
+          <br />
+        </div>
+      </div>
+      <div class="form-group" style="margin-top:2em;">
+        <label>MISC</label>
+        <br />
+        <button id="towinners" style="color:white;width:100%;margin-top:0.5em;font-weight:bold;" type="button" class="btn pinkbg buttonclass">SHOW LEADER BOARD</button>
+        <br />
+        <button id="help" style="color:white;width:100%;margin-top:0.5em;font-weight:bold;" type="button" class="btn brownbg buttonclass">HELP</button>
+        <br />
+      </div>
+    </form>
+  </div>
+</template>

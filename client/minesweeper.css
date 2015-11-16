@@ -1,0 +1,83 @@
+/* CSS declarations go here */
+
+body,
+#loading {
+    background: url('bg.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.redbg {
+    background: rgb(236, 104, 91);
+}
+
+th {
+    text-align: center;
+}
+
+.orangebg {
+    background: rgb(240, 173, 78);
+}
+
+.greenbg {
+    background: rgb(115, 204, 132);
+}
+
+.greenbgdark {
+    background: rgb(92, 184, 92);
+}
+
+.bluebg {
+    background: rgb(119, 158, 203);
+}
+
+.bluebgdark {
+    background: rgb(51, 122, 183);
+}
+
+.greybg {
+    background: rgb(201, 202, 204);
+}
+
+.pinkbg {
+    background: rgb(222, 165, 164);
+}
+
+.brownbg {
+    background: rgb(131, 104, 83);
+}
+
+.cell {
+    border-radius: 0;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.buttonclass {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.cell:hover,
+.buttonclass:hover {
+    filter: brightness(115%);
+}
+
+.progress {
+    position: relative;
+}
+
+.progress span {
+    position: absolute;
+    display: block;
+    width: 100%;
+}
+
+label {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}

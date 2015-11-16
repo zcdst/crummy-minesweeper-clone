@@ -1,0 +1,18 @@
+<template name="minefield">
+  <div id="minefielddiv" style="background:hsl(0,2%,25%);padding:1em 2em 1em 2em;border:1px solid black;margin-top:0em;box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);margin-bottom:1.5em;">
+    <h1 style="height:45px;line-height:45px;margin:0em auto 1em auto;text-shadow:1px 1px 2px black;color:white;width:50%;text-align:center;font-weight:bold;font-size:1.5em;background:rgb(241,155,126);border:1px solid black;padding:0em;box-shadow:2px 2px 4px rgba(0,0,0,0.5)">1612ICT MINESWEEPER<div style="position:relative;right:-150px;top:-58px"><img width="75px" src="logo.png"></div></h1> {{#each buttons}}
+    <button id="test" class="btn btn-md cell" style="color:rgb(240, 173, 78);width:{{buttonsizestatic}};height:{{buttonsizestatic}};margin-bottom:4px;font-weight:bold;font-size:200%;background:{{buttoncolour}};background-size:contain;">{{surrounds}}</button>
+    {{#if newrow}}
+    <br /> {{/if}} {{/each}} {{#if ispreset}}
+    <div class="progress" style="border-radius:0;width:70%;height:30px;margin-top: 1em;margin-left:auto;margin-right:auto;background:rgb(201, 202, 204);border:1px solid black;box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);text-align:center;">
+      <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:{{barprogress}}%;border-radius:0px;font-weight:bold;text-shadow: 1px 1px 2px rgba(0, 0, 0, 75);">
+        <span style="color:white;line-height:30px">{{bartimehr}}</span>
+      </div>
+    </div>
+    {{/if}}
+    <button style="width:50%;margin-top:0em;color:white;font-weight:bold;" id="cheat" type="button" class="btn pinkbg buttonclass">CHEAT</button>
+    <button id="resetgame" style="width:50%;margin-top:0.5em;font-weight:bold;color:white;" type="button" class="btn bluebgdark buttonclass">RESET GAME</button>
+    <br />
+    <button id="back" style="width:50%;margin-top:0.5em;margin-bottom:0em;font-weight:bold;color:white;" type="button" class="btn orangebg buttonclass">BACK</button>
+  </div>
+</template>

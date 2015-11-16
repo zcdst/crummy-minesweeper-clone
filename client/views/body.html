@@ -1,0 +1,24 @@
+<head>
+  <title>Minesweeper</title>
+</head>
+
+<body>
+  <!--<div style="background-position:center; position:absolute; background-repeat: no-repeat;background-attachment:fixed;background:url('background.png');width:100%;height:100%;opacity:0.1;margin-left:auto;margin-right:auto"></div> -->
+  <audio id="clickaudio" src="click.mp3"></audio>
+  <audio id="loseaudio" src="gameover.mp3"></audio>
+  <audio id="winaudio" src="winner.mp3"></audio>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-centered col-xs-5" style="margin-left:auto;margin-right:auto;float:none;margin-top:2em;min-width:768px;">
+        {{#if showopts}} {{> optionsform}} {{/if}}
+      </div>
+      <div id="minediv" class="text-center col-centered col-xs-5" style="margin:0 auto;margin-top:0em;min-width:768px;float:none;">
+        {{#if showmines}} {{> minefield}} {{/if}}
+      </div>
+      <div class="text-center col-centered col-xs-5" style="margin-left:auto;margin-right:auto;margin-top:0em;float:none;min-width:768px">
+        {{#if showwinners}} {{> winnerstable}} {{/if}}
+      </div>
+    </div>
+    {{> loading}}
+  </div>
+</body>
